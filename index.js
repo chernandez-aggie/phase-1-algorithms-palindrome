@@ -1,9 +1,26 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let newString = "";
+  for (let i = word.length -1; i >= 0; i--){
+        newString = newString + word[i];
+  }
+  console.log(`${word} and ${newString}`);
+  if (word === newString) {
+    return true;
+  } else {
+    return false;
+  }
+
 }
 
 /* 
   Add your pseudocode here
+  1. take in string
+  2. loop over each character of string backwards
+  3. while looping input that character into new string
+  4. see if new string matches original string
+  5. if yes, print true. if no, print false.
+ 
 */
 
 /*
